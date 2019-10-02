@@ -11,4 +11,4 @@ const SpotSchema = new moongose.Schema({
   },
 });
 
-module.exports = moongose.model('Spot', SpotSchema);
+module.exports = moongose.model('spot', SpotSchema);

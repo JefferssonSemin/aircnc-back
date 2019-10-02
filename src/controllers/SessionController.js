@@ -4,10 +4,8 @@ module.exports = {
 
     let user = await user.findOne({ email });
 
-    if (!user)
-      const user = await User.create({ email });
-      
-      
-      return res.json(user);
+    if (!user) user = await User.create({ email });
+
+    return res.json(user);
   },
 };
